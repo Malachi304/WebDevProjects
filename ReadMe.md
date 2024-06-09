@@ -1,0 +1,1 @@
+Collection of small-medium scale web development projects to practice JS, HTML, and CSS
