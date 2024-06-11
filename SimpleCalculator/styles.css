@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.Container{
+    background-color: #333;
+    height: 400px;
+    width: 300px;
+    border: 2px solid #000;
+    padding: 2px;
+    border: 0;
+    
+}
+
+.Container .Screen{
+    width: 280px;
+    height: 75px;
+    background-color: #fff;
+}
+
+.Container .ButtonBox{
+    background-color: #fff;
+    width: 295px;
+    height: 315px;
+    margin-top: 5px;
+}
