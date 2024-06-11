@@ -16,9 +16,62 @@ body{
     width: 120px;
     height: 40px;
     margin: 5px;
+    cursor: pointer;
 }
-.ToastBox{
+#ToastBox{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overflow: hidden;
+    padding: 30px;
+
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+}
+.Toast{
+    width: 400px;
+    height: 80px;
+    background-color: #fff ;
+    font-weight: 500;
+    margin: 15px 0px;
+    box-shadow: 0 0 20px;
+    display: flex;
+    align-items: center;
+
+    position: relative
+}
+
+.Toast i{
+    margin: 0 20px;
+    font-size: 35px;
+    color: green;
+}
+.Toast.Error i{
     color: red;
-    height: 10px;
-    width: 10px;
+}
+.Toast.Invalid i{
+    color: orange;
+}
+.Toast::after{
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    background: green;
+    animation: anim 5s linear forwards;
+    width: 100%;
+}
+.Toast.Error::after{
+    background-color: red;
+}
+.Toast.Invalid::after{
+    background: orange;
+}
+@keyframes anim{
+    100%{
+        width: 0;
+    }
 }

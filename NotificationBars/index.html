@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/dfe5780025.js" crossorigin="anonymous"></script>
+    <title>Notification bar</title>
 </head>
 <body>
     <div class="Buttons">
 
-        <button>Sucess</button>
-        <button>Error</button>
-        <button>Invalid</button>
+        <button onclick="showToast(SuccessMesg)">Success</button>
+        <button onclick="showToast(ErrorMesg)">Error</button>
+        <button onclick="showToast(InvalidMesg)">Invalid</button>
     </div>
 
-    <div class="ToastBox">
+    <div id="ToastBox"></div>
 
-        <p>test</p>
-    </div>
+    <script src="script.js"></script>
+
 </body>
-<script src="script.js"></script>
 </html>
