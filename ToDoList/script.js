@@ -15,6 +15,7 @@ function addTask(){
         li.appendChild(span);
     }
     inputBox='';
+    saveData()
 
 }
 
@@ -25,6 +26,13 @@ listContainer.addEventListener("click", function(e){
     else if (e.target.tagName ==="SPAN"){
         e.target.parentElement.remove(); 
     }
+    saveData()
 }, false);
 
-
+function saveData(){
+    localStorage.setItem("Data", listContainer.innerHTML)
+}
+function showTasks(){
+    listContainer.innerHTML = localStorage.getItem("Data")
+}
+showTasks();
