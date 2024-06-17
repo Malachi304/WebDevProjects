@@ -19,16 +19,30 @@
     margin-bottom: 10px;
 }
 #buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #fff;
+    display: flex;
 }
 #buttons ul{
-    margin-bottom: 30px;
+    width: 100%;
+    background-color: black;
+
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 items per row */
+    gap: 10px; /* Space between items */;
+
+
 }
 ul li{
     font-weight: bolder;
     list-style: none;
     font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+
+
 }
