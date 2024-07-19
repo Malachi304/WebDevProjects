@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/dfe5780025.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <title>Harris Junk Removal</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="top">
+
+            <div id="top-content">
+                <img src="images\harrisJunk.jpg" alt="Description of the image">
+                <h1>Harris Junk Removal</h1>
+            </div>
+
+            <div id="navbar-container">
+                <i class="fa-solid fa-truck-fast">Services</i>
+                <i class="fa-solid fa-calendar-days">Schedule</i>
+                <i class="fa-solid fa-phone">Contact</i>
+            </div>
+        </div>
+
+        <div id="main-image">
+            <img src="images/JunkRem4.jpg">
+            </div>
+        <div id="center-container">
+
+
+          <form action="send_email.php" method="post">
+            <h1>Set up a Service!</h1>
+            <hr></hr>
+            <input type="hidden" name="access_key" value="API_KEY">
+
+            <input class="form-inputs" type="text" required placeholder="First name" id="FirstName" name="name">
+            <input class="form-inputs" type="text" required placeholder="Last name" id="LastName" name="name">
+            <input class="form-inputs" type="email" required placeholder="example@gmail.com" id="email" name="email">
+            <select required id="service" name="service">
+                <option>Junk Removal</option>
+                <option>vegitation Removal</option>
+                <option>Other</option>
+            </select>
+            <textarea class="form-inputs" placeholder="Add Messsage"></textarea>
+            <button type="submit" value="Send">Send</button>
+          </form>
+
+          <div id="contact">
+            <h1>Contact Us</h1>
+            <hr></hr>
+            
+          </div>
+
+        </div>
+    
+        <div id="services">
+            <h2>Junk Removal</h2>
+                <div id="removal-bio">
+                <p>We will haul away any unwanted junk reguarless of the amount, or size. <b> We often work with realtors to remove renovation junk, or to clear out junk for future projects. <b></p>
+                <p>We've completed jobs including junk/trash removal, vegitation removal, and more. <b> Please see common pricing below, and note that price ranges vary depending on the job. Please fill out the above form to be consulted.</p>
+                </div>
+
+            <h2>Landscaping</h2>
+            <p>Although we primarly offer junk removal services, we've expanded some operations to simple Landscaping services as well. <b></p>
+            <p>These services included, regular lawn care/ mowing, stump removal and hauling, and hedge trimmings.<b></p>
+            <p>Price ranges may vary depending on job. Please fill out the form above to recieve a consultation.</p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>
