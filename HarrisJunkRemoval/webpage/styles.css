@@ -6,6 +6,12 @@
     font-weight: bolder;
 }
 
+hr{
+    margin-top: 5px;
+    background-color: black;
+    height: 20px;
+    width: auto;
+}
 
 #container{
     width: 100%;
@@ -13,16 +19,16 @@
 }
 
 h1{
-    margin-top: 20px;
+    margin-top: 16px;
 }
-#top{
+#top-container{
     display: flex;
     background-color: #fff;
     margin-bottom: 20px;
 }
 
 
-#top img{
+#top-content img{
     margin-top: 2px;
     margin-left: 2px;
     height: 80px;
@@ -40,7 +46,6 @@ h1{
     align-items: center;
     background-color: #fff;
     padding: 10px;
-    margin-top: 5;
     color: #d32117;
 }
 
@@ -53,26 +58,42 @@ h1{
 }
 
 #main-image img{
-    padding: 10px;
     max-width: 100%;
-    height: auto;
+    box-sizing: border-box;
+
 }
 
 #center-container{
     background-color: #fff;
     display: flex;
+    height: 70vh;
+    width: 100%;
 }
+
+.half{
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+.left{
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: 50vh;
     width: 500px;
     height: auto;
-    margin-top: 20px;
-    margin-left: 5%;
+    gap: 20px;
     border-radius: 10px;
     background-color: #f8f8f8;
 }
@@ -82,7 +103,7 @@ form h1{
     color: #d32117;
 }
 form hr{
-    font-size: larger;
+    height: 2px;
 }
 form input{
     padding: 5px;
@@ -102,13 +123,6 @@ form button{
 form textarea{
     padding: 10px;
 }
-#services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-color: #fff;
-}
 
 i{
     padding: 10px;
@@ -118,6 +132,68 @@ i:hover{
 cursor: pointer;
 }
 
-#removal-bio{
+#hours{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+@media screen and (min-width:300px) and (max-width:432px){
+    #center-container{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    #top-container{
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+  
+    form{
+        width: 300px;
+        margin: auto;
+    }
+    .right{
+        font-size: smaller;
+    }
+} 
+
+@media screen and (min-width:432px) and (max-width:600){
+    #center-container{
+        flex-direction: column-reverse;
+    }
+
+    #top-container{
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+   
+    form{
+        width: 300px;
+    }
+
+    .right{
+        font-size: smaller;
+    }
+} 
+
+@media screen and (min-width:600px) and (max-width:1400px){
+
+    #center-container{
+        height: auto;
+    }
+
+    #top-container{
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+  
+    form{
+        width: 300px;
+        margin: auto;
+    }
+}
+
+
